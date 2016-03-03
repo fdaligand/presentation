@@ -15,8 +15,10 @@
             <div class="slides">
                 
                 <section><h1>First step with Jenkins</h1>
-                            <p><small>Created by Florent DALIGAND</small> 
+                            <p><small>Created by Florent DALIGAND</small></p>
                 </section>
+                        <div class="slides">
+                
                 <section data-markdown>
                     <script type="text/template">
                         ## Markdown support
@@ -59,6 +61,7 @@
                 
             </div>
         </div>
+        <script src="reveal.js-3.2.0/lib/js/head.min.js"></script>
         <script src="reveal.js-3.2.0/js/reveal.js"></script>
         <script>
             Reveal.initialize({
@@ -66,6 +69,15 @@
                 // Transition style
                 transition: 'default', // none/fade/slide/convex/concave/zoom
 
+            
+            dependencies: [
+                    { src: 'reveal.js-3.2.0/lib/js/classList.js', condition: function() { return !document.body.classList; } },
+                    { src: 'reveal.js-3.2.0/plugin/markdown/marked.js', condition: function() { return !!document.querySelector( '[data-markdown]' ); } },
+                    { src: 'reveal.js-3.2.0/plugin/markdown/markdown.js', condition: function() { return !!document.querySelector( '[data-markdown]' ); } },
+                    { src: 'reveal.js-3.2.0/plugin/highlight/highlight.js', async: true, callback: function() { hljs.initHighlightingOnLoad(); } },
+                    { src: 'reveal.js-3.2.0/plugin/zoom-js/zoom.js', async: true },
+                    { src: 'reveal.js-3.2.0/plugin/notes/notes.js', async: true }
+                ],
             });
         </script>
     </body>
