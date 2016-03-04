@@ -17,30 +17,12 @@
                 <section><h1>First step with Jenkins</h1>
                             <p><small>Created by Florent DALIGAND</small></p>
                 </section>
-                        <div class="slides">
-                
-                <section data-markdown>
-                    <script type="text/template">
-                        ## Markdown support
-
-                        Write content using inline or external Markdown.
-                        Instructions and more info available in the [readme](https://github.com/hakimel/reveal.js#markdown).
-
-                        ```
-                        <section data-markdown>
-                          ## Markdown support
-
-                          Write content using inline or external Markdown.
-                          Instructions and more info available in the [readme](https://github.com/hakimel/reveal.js#markdown).
-                        </section>
-                        ```
-                    </script>
-                </section>
                 <section>
+                    <h2>Presentation summary</h2>
                         <ol>
                             <li> What is Jenkins </li>
                             <li> Install Jenkins</li>
-                            <li> Overview of teh master</li>
+                            <li> Configure Jenkins</li>
                             <li> Create a build job</li>
                             <li> Create a "campaign" job</li>
                             <li> Advanced features</li>
@@ -53,11 +35,103 @@
                     <section data-markdown>
                         <script type="text/template">
                             from [jenkins-ci.org](https://wiki.jenkins-ci.org/display/JENKINS/Meet+Jenkins)
+
                             >Jenkins is a **continuous integration and continuous delivery application**.
                             >Jenkins is use to build and test software projects continuously.
+                            
                         </script>
                     </section>
+                    <section>
+                        <h2>Main Features</h2>
+                            <ul>
+                                <li> Easy installation</li>
+                                <li> Easy configuration</li>
+                                <li> Rich plugin ecosystem</li>
+                                <li> Extensibility </li>
+                            </ul>
+
+                    </section>
                 </section>  
+                <section>
+                    <section>
+                        <h1> Install Jenkins</h1>
+                    </section>  
+                    <section>
+                    <h2> Install Java</h2>
+                    <p> Jenkins is a Java web application which need at least JRE 1.6</p>
+                    <p><strong>Check your java version</strong></p>
+                     <pre>
+                        <code data-trim data-noescape >
+                            java -version 
+                        </code>
+                     </pre>
+                     </section>
+                     <section>
+                    <h2> Install Git</h2>
+                    <p> Git is the new leading source control software, use it!</p>
+                     <pre>
+                        <code data-trim data-noescape >
+                            sudo apt-get install git
+                        </code>
+                     </pre>
+                     <p> for Windows user install git from <a href="https://git-scm.com/download/win">here</a></p>
+                     <p>Check git install</p>
+                     <pre>
+                        <code data-trim data-noescape >
+                            git --version
+                        </code>
+                     </pre>
+                     </section>
+                     <section>
+                        <h2>Forking the Sample Repository</h2>
+                        <pre>
+                        <code data-trim data-noescape >
+                            git clone git@github.com:username/game-of-life.git
+                        </code>
+                     </pre>
+                     <p> or </p>
+                     <pre>
+                        <code data-trim data-noescape >
+                            https://github.com/wakaleo/game-of-life.git
+                        </code>
+                     </pre>
+                    </section>
+                    <section>
+                        <h2> Dowload and install Jenkins</h2>
+                        <ul>
+                            <li>
+                                Dowload the <a href="http://mirrors.jenkins-ci.org/war/latest/jenkins.war">jenkins.war</a>
+                            </li>
+                            <li>Launch jenkins
+                                <pre>
+                                    <code data-trim data-noescape >
+                                        java -jar jenkins.war
+                                    </code>
+                                </pre>
+                            </li>
+                            <li>
+                                See what happen if we go to your favorite browser (ie not IE... )
+                                <pre>
+                                    <code data-trim data-noescape >
+                                        http://localhost:8080/jenkins
+                                    </code>
+                                </pre>
+                            </li>
+                        </ul>
+                    </section>
+                    <section data-background="https://45.media.tumblr.com/4b37dedcd561a03e8ddab543e8bb432b/tumblr_nawib209ad1sjb9uao1_400.gif">
+
+                    </section>
+                </section>
+                <section>
+                    <section>
+                        <h2>Configure Jenkins</h2>
+                    </section>  
+                    <section> 
+                        <h3> Configuring the Tools </h3>
+                    
+                    </section>
+                </section>
                 
             </div>
         </div>
